@@ -1,2 +1,2 @@
-mmdet==2.4.0
-mmcv_full==1.1.4
+mmdet==2.20.0
+mmcv-full==1.4.0
