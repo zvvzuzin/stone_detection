@@ -5,7 +5,7 @@ import numpy as np
 
 class Inference_model:
     def __init__(self, path_to_cfg = 'configs/custom_maskrcnn.py', path_to_model = 'weights.pth'):
-        cfg = Config.fromfile('configs/custom_maskrcnn.py')
+        cfg = Config.fromfile(path_to_cfg)
         self.model = init_detector(cfg, path_to_model, device='cpu')
         self.model.CLASSES = ('stone', ) # UserWarning: Class names are not saved in the checkpoint's meta data, use COCO classes by default.
         self.model.classes = self.model.CLASSES
